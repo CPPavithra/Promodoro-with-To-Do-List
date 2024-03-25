@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Promodoro Timer</h1>
+
+    <figure class="clock">
+      <div class="mins" style="color:white">0</div>
+      <div style="color:white">:</div>
+      <div class="secs" style="color:white">00</div>
+      <audio
+        src="alarm.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">start focus</button>
+      <button class="reset">reset</button>
+      <button class="pause">pause</button>
+    </div>
+
+    <!--<form action=".">
+      <label for="focusTime">Focus Time</label>
+      <input type="number" value="1" id="focusTime" />
+      <label for="breakTime">Break Time</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit">Save settings</button>
+    </form>-->
+	
+	
+	
+	
+	
+	
+	
+	<input type="checkbox" id="ham-menu">
+<label for="ham-menu">
+  <div class="hide-des">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </div>
+
+</label>
+
+
+<div class="full-page-green"></div>
+<div class="ham-menu">
+<form action=".">
+      <label for="focusTime">Focus Time</label>
+      <input type="number" value="1" id="focusTime" />
+      <label for="breakTime">Break Time</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit" id="btn1">Save settings</button>
+	  <br>
+	  <br>
+	  <h1>Session Count</h1>
+	  <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<div class="container">
+        <div class="todoApp">
+            <h2>To-Do List <img src="./images/todo.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="inputBox" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="listContainer">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+
+            </ul>
+        </div>
+    </div>
+	 
+	
+	
+	
+	
+    <script src="settings.js"></script>
+    <script src="timer.js"></script>
+	<script src="store.js"></script>
+    <script src="progress.js"></script>
+	<script src="list.js"></script>
+  </body>
+</html>
